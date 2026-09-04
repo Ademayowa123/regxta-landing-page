@@ -1,0 +1,312 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display:flexbox;
+    margin: 20px;
+
+    .logo{
+        float: left;
+        margin-left: 1em;
+    }
+
+    .navbar-components{
+       text-align: right;
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            margin: 1em;
+
+            &:hover{
+                font-weight: bold;
+            }
+            .home{
+                color:rgb(218, 161, 38);
+            }
+            .contactss{
+                color: white;
+                background-color: rgb(218, 161, 38);
+                border: 1px solid rgb(218, 161, 38);
+                border-radius: 40px;
+                padding: 10px 25px 10px 25px;
+            }
+        }
+    }
+}
+
+.about{
+    display: flex;
+    margin-top: 3em;
+    justify-content: space-between;
+    margin-left: 3.5em;
+    .left{
+        text-align: left;
+        margin-right: 1.5em;
+        width: 50%;
+
+        h1{
+            color: rgb(218, 161, 38);
+            font-size:50px;
+        }
+        p{
+            font-size: 20px;
+            margin-right: 5em;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+
+            &:hover{
+              font-weight: bold;
+            }
+            span{
+                color: white;
+                font-size: 20px;
+                background-color: rgb(218, 161, 38);
+                border: 1px solid rgb(218, 161, 38);
+                border-radius: 40px;
+                padding: 10px 50px 10px 50px;
+            }
+        }
+        .agent{
+            text-align: center;
+        }
+    }
+    .right{
+        float: right;
+        padding-right: 3em;
+        
+        img{
+            width: 450px;
+            
+        }
+    }
+}
+
+.our-products{
+    padding-left: 1.5em;
+    background: rgb(238, 238, 238);
+
+    .heading{
+        text-align: center;
+        .head{
+            font-weight: bolder;
+            font-size: 30px;
+            margin-bottom: -.5em;
+            padding-top: .5em;
+        }
+        .intro{
+            font-weight:bold ;
+            font-size: 20px;
+        }
+    }
+
+    .story{
+        display: flex;
+
+        .products-list{
+            width: 58%;
+            text-align: left;
+           
+           .products{
+               
+                h3{
+                    font-size: 25px;
+                    font-weight: bolder;
+                }
+                li{
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+           }
+        }
+
+        .image{
+            text-align: right;
+            background-color: rgb(253, 255, 207);
+            border-radius: 49%;
+            padding: 70px;
+            height: 300px;
+            margin-top: 2em;
+            margin-left: 15em;
+            
+        .inner{
+            background: rgb(218, 161, 38);
+            padding: 0px 40px 0px 40px;
+            border-radius: 60%;
+            height: 300px;
+            
+        }
+
+        .main{
+    
+            img{
+                height: 430px;  
+                width: 200px;
+                margin-top: -4em;
+            }
+                       
+        }
+    }
+    }
+}
+
+.FAQ{
+    background: rgb(238, 238, 238);
+
+
+    p{
+        text-align: center;
+        font-size: 1.1em;
+
+        a{
+            text-decoration: none;
+            color: rgb(218, 161, 38) ;
+        }
+
+    }
+    .helpline{
+        
+        padding-bottom: 3em;
+    }
+    h1{
+        text-align: center;
+    }
+    .accordion{
+       margin: 0 90px 0 90px;
+       font-size: 18px;
+       padding: 45px 45px;
+       
+       .container{
+           position: relative;
+           margin: 10px 10px;
+       }
+       .label{
+           position: relative;
+           padding: 10px 0;
+           cursor: pointer;
+           background: white;
+           font-size: 22px;
+           font-weight: bold;
+           margin-bottom: 10px;
+
+       }
+       .label::before{
+           content: '+';
+           background: white;
+           color: black;
+           position: relative;
+           font-weight: bold;
+           top: 50%;
+           left: 97%;
+           font-size: 30px;
+           transform: translateY(-50%);
+       }
+       .content{
+           position: relative;
+           overflow: hidden;
+           font-size: 20px;
+           padding: 0 10px 0 10px;
+           text-align: justify;
+           transition: 0.5s;
+           height: 0;
+       }
+       .container.active .content{
+           height: 80px;
+       }
+       .container.active .label::before{
+           content: '-';
+           font-size: 40px;
+           font-weight: bold;
+       }
+    }
+}
+
+hr{
+   margin-bottom: 20px;     
+}
+
+
+.footer{
+    background: #20202f;
+    padding-top: 10em;
+    padding-left: 5em;
+    display: flex;
+    color: white;
+    height: 380px;
+
+    .logo2{
+        color: white;
+        font-size: 20px;
+        width: 33%;
+        margin-right: 1em;
+
+        img{
+            width: 250px;
+        }
+    }
+    .contact{
+        display:flex ;
+
+        .subjects{
+            width: 25%;
+            
+        }
+      
+        ul{
+           margin-right: 4em;
+           cursor: pointer;
+            li{
+                list-style: none;
+                font-size: 18px;
+                margin-top: 25px;
+               
+
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .topic{
+            font-size: 25px;
+            
+        }
+
+        .playstore, .store {
+             width: 200px;
+             margin-left: 3em;
+             margin-bottom: 2em;
+             cursor: pointer;
+             border-radius: 50px;
+
+             &:hover{
+                 border: 3px white solid;
+                 border-radius: 50px;
+             }
+         }
+        
+       
+    }
+    .there{
+        input{
+            margin-top: 10px;
+            height: 30px;
+            width: 200px;
+            background-color: lightgrey;
+            border-radius: 10px;
+          
+        }
+        button{
+            height: 35px;
+            color: white;
+            background-color: #20202f;
+            border: white solid 1px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,327 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flexbox;
+  margin: 20px;
+}
+
+.navbar .logo {
+  float: left;
+  margin-left: 1em;
+}
+
+.navbar .navbar-components {
+  text-align: right;
+}
+
+.navbar .navbar-components a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin: 1em;
+}
+
+.navbar .navbar-components a:hover {
+  font-weight: bold;
+}
+
+.navbar .navbar-components a .home {
+  color: #daa126;
+}
+
+.navbar .navbar-components a .contactss {
+  color: white;
+  background-color: #daa126;
+  border: 1px solid #daa126;
+  border-radius: 40px;
+  padding: 10px 25px 10px 25px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 3.5em;
+}
+
+.about .left {
+  text-align: left;
+  margin-right: 1.5em;
+  width: 50%;
+}
+
+.about .left h1 {
+  color: #daa126;
+  font-size: 50px;
+}
+
+.about .left p {
+  font-size: 20px;
+  margin-right: 5em;
+}
+
+.about .left a {
+  text-decoration: none;
+  color: white;
+}
+
+.about .left a:hover {
+  font-weight: bold;
+}
+
+.about .left a span {
+  color: white;
+  font-size: 20px;
+  background-color: #daa126;
+  border: 1px solid #daa126;
+  border-radius: 40px;
+  padding: 10px 50px 10px 50px;
+}
+
+.about .left .agent {
+  text-align: center;
+}
+
+.about .right {
+  float: right;
+  padding-right: 3em;
+}
+
+.about .right img {
+  width: 450px;
+}
+
+.our-products {
+  padding-left: 1.5em;
+  background: #eeeeee;
+}
+
+.our-products .heading {
+  text-align: center;
+}
+
+.our-products .heading .head {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: -.5em;
+  padding-top: .5em;
+}
+
+.our-products .heading .intro {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.our-products .story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.our-products .story .products-list {
+  width: 58%;
+  text-align: left;
+}
+
+.our-products .story .products-list .products h3 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.our-products .story .products-list .products li {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.our-products .story .image {
+  text-align: right;
+  background-color: #fdffcf;
+  border-radius: 49%;
+  padding: 70px;
+  height: 300px;
+  margin-top: 2em;
+  margin-left: 15em;
+}
+
+.our-products .story .image .inner {
+  background: #daa126;
+  padding: 0px 40px 0px 40px;
+  border-radius: 60%;
+  height: 300px;
+}
+
+.our-products .story .image .main img {
+  height: 430px;
+  width: 200px;
+  margin-top: -4em;
+}
+
+.FAQ {
+  background: #eeeeee;
+}
+
+.FAQ p {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.FAQ p a {
+  text-decoration: none;
+  color: #daa126;
+}
+
+.FAQ .helpline {
+  padding-bottom: 3em;
+}
+
+.FAQ h1 {
+  text-align: center;
+}
+
+.FAQ .accordion {
+  margin: 0 90px 0 90px;
+  font-size: 18px;
+  padding: 45px 45px;
+}
+
+.FAQ .accordion .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+.FAQ .accordion .label {
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+  background: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.FAQ .accordion .label::before {
+  content: '+';
+  background: white;
+  color: black;
+  position: relative;
+  font-weight: bold;
+  top: 50%;
+  left: 97%;
+  font-size: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.FAQ .accordion .content {
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 0 10px 0 10px;
+  text-align: justify;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 0;
+}
+
+.FAQ .accordion .container.active .content {
+  height: 80px;
+}
+
+.FAQ .accordion .container.active .label::before {
+  content: '-';
+  font-size: 40px;
+  font-weight: bold;
+}
+
+hr {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background: #20202f;
+  padding-top: 10em;
+  padding-left: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  height: 380px;
+}
+
+.footer .logo2 {
+  color: white;
+  font-size: 20px;
+  width: 33%;
+  margin-right: 1em;
+}
+
+.footer .logo2 img {
+  width: 250px;
+}
+
+.footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .contact .subjects {
+  width: 25%;
+}
+
+.footer .contact ul {
+  margin-right: 4em;
+  cursor: pointer;
+}
+
+.footer .contact ul li {
+  list-style: none;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.footer .contact ul li:hover {
+  font-weight: bold;
+}
+
+.footer .contact .topic {
+  font-size: 25px;
+}
+
+.footer .contact .playstore, .footer .contact .store {
+  width: 200px;
+  margin-left: 3em;
+  margin-bottom: 2em;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.footer .contact .playstore:hover, .footer .contact .store:hover {
+  border: 3px white solid;
+  border-radius: 50px;
+}
+
+.footer .there input {
+  margin-top: 10px;
+  height: 30px;
+  width: 200px;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.footer .there button {
+  height: 35px;
+  color: white;
+  background-color: #20202f;
+  border: white solid 1px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
